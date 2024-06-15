@@ -1,5 +1,6 @@
 package secondLife;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -17,7 +18,7 @@ public class CategoriesPageTest extends Basetest{
         clickOnElement(By.cssSelector("[href='#/category']"));
         clickOnElement(By.cssSelector("[href='#/category/id=2']"));
 //        clickOnElement(By.cssSelector("[class='css-1g614w6']"));
-//        Assertions.assertTrue(getElement(By.xpath("//[text()='Furniture and Home Decor']")).isDisplayed());
+        Assertions.assertTrue(getElement(By.xpath("//[text()='Furniture and Home Decor']")).isDisplayed());
     }
     @Test
     @Tag("CategoriesTest")
