@@ -18,7 +18,7 @@ public class CategoriesPageTest extends Basetest{
         clickOnElement(By.cssSelector("[href='#/category']"));
         clickOnElement(By.cssSelector("[href='#/category/id=2']"));
 //        clickOnElement(By.cssSelector("[class='css-1g614w6']"));
-        Assertions.assertTrue(getElement(By.xpath("//[text()='Furniture and Home Decor']")).isDisplayed());
+        Assertions.assertTrue(getElement(By.xpath("//*[@id=\"root\"]/div/main/div/div[1]/div")).isDisplayed());
     }
     @Test
     @Tag("CategoriesTest")
