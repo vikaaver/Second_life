@@ -44,8 +44,38 @@ public class FurnitureAndHomeDecorTests extends Basetest {
     }
 
 
+    @Test
+    @Tag("CategoriesTest")
+    @DisplayName(" Furniture and Home Decor checking card 2")
+    void test4() {
+        driver.navigate().to(URL_SECOND_LIFE);
+        clickOnElement(By.cssSelector("[href='#/category']"));
+        clickOnElement(By.cssSelector("[href='#/category/id=2']"));
+        clickOnElement(By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[2]/div/div[2]/a"));
+        clickOnElement(By.cssSelector("[href='#/offers/136']"));
+    }
+    @Test
+    @Tag("CategoriesTest")
+    @DisplayName(" Furniture and Home Decor checking 3 buyout")
+    void test5() {
+        driver.navigate().to(URL_SECOND_LIFE);
+        clickOnElement(By.cssSelector("[href='#/category']"));
+        clickOnElement(By.cssSelector("[href='#/category/id=2']"));
+        clickOnElement(By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[3]/div/div[2]/a"));
+        clickOnElement(By.cssSelector("[class='css-1mk6z5f']"));
+    }
 
-
+    @Test
+    @Tag("CategoriesTest")
+    @DisplayName(" Furniture and Home Decor checking make a bid 3")
+    void test6() {
+        driver.navigate().to(URL_SECOND_LIFE);
+        clickOnElement(By.cssSelector("[href='#/category']"));
+        clickOnElement(By.cssSelector("[href='#/category/id=2']"));
+        clickOnElement(By.xpath("//*[@id=\"root\"]/div/main/div/div[2]/div/div[3]/div/div[2]/a"));
+        fillInputField(By.cssSelector("[class='css-h7eszq']"), "0");
+        clickOnElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div[2]/div[1]/div/button"));
+    }
 
     }
 
